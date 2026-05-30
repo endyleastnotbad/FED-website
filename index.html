@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Conservation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- Header contains the website title and main navigation links. -->
+<header>
+    <h1 class="title">Water Conservation</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/action.html">Personal Action</a></li>
+            <li><a href="pages/about.html">About Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+
+        <!-- Hero section introduces the topic of the website. -->
+        <section class="hero">
+            
+            <h2>Why Water Conservation Matters</h2>
+            <p> Water is an essential part of every living being, 
+                and it is not only beneficial for us but also for other species, 
+                as well as for future generations to come. I chose this topic because 
+                a lot of us waste a ton of water more than we realize, and more awareness should 
+                be brought to the problem
+            </p>
+            
+        </section>
+        
+
+        <!-- Topic buttons switch between the main home page sections. -->
+        <div class="topics">
+            <button class="topic-btn active-btn factors-btn" data-section="factors" onclick="showSection('factors')">Factors</button>
+            <button class="topic-btn impact-btn" data-section="impacts" onclick="showSection('impacts')">Impacts</button>
+            <button class="topic-btn sol-btn" data-section="solutions" onclick="showSection('solutions')">Solutions</button>
+            <button class="topic-btn prac-btn" data-section="practical" onclick="showSection('practical')">Practical Applications</button>
+        </div>
+
+
+        <div id="factors" class="content-section">
+
+            <div class="content-box">
+
+                <div class="image-section">
+                    <!-- Image source: https://pixnio.com/media/imprint-footprint-mud-drought-ground -->
+                    <img src="images/drought.webp" alt="drought image" />
+                    <p class="copyright">© <a href="https://pixnio.com/media/imprint-footprint-mud-drought-ground" target="_blank">pixno</a></p>
+                </div>
+
+                <div class="content-text">
+                    <h2>Why do we need to conserve water?</h2>
+                    <ul>
+                        <li>Population growth</li>
+                        <li>Agriculture</li>
+                        <li>Climate change</li>
+                        <li>Energy consumption</li>
+                    </ul>
+                </div>
+                
+            </div>    
+            
+            <div class="content-textbox">
+
+                <div class="subsection">
+
+                    <div class="content-text">
+
+                        <h1 class="subhead">Population Growth</h1>
+
+                        <p> 
+                            As our global population continues skyrocketing, factors such as 
+                            drinking, cooking, sanitation or hygein, all contribute for increased consumption of fresh water.
+                            In many regions, the rate of population growth exceeds the development of water supply and sanitation systems, 
+                            leading to economic water scarcity where people lack access despite available water resources.
+                            Sufficient freshwater remains incredibly essential for growth of humans.
+                        </p><br>
+                    </div>
+
+                    <div class="image-section">
+                        <!-- Image source: https://unsplash.com/photos/people-gathering-6TLCSMj8zgE -->
+                        <img src="images/population.webp" alt="population image"/>
+                        <p class="copyright">© <a href="https://unsplash.com/photos/people-gathering-6TLCSMj8zgE" target="_blank">unsplash</a></p>
+                    </div>
+                </div>
+
+            </div> 
+
+            <div class="content-textbox">
+
+                <div class="subsection">
+
+                    <div class="image-section">
+                        <!-- Image source: https://www.pexels.com/photo/people-harvesting-in-a-vegetable-plantation-5258368/ -->
+                        <img src="images/agriculture.webp" alt="agriculture image">
+                        <p class="copyright">© <a href="https://www.pexels.com/photo/people-harvesting-in-a-vegetable-plantation-5258368/" target="_blank">pexels</a> </p>
+                    </div>
+
+                    <div class="content-text">
+                        <h1 class="subhead">Agriculture</h1>
+                
+                        <p>
+                            As mentioned above, more people means a greater need for food. 
+                            Since agriculture consumes about 70% of global freshwater for irrigation, 
+                            livestock, and food processing, population growth significantly drives up water demand 
+                            Furthermore, if there were to be a drought, plants will die, and it becomes difficult to grow food.
+                            Therefore, keeping a habit of conserving water is essential for having enough water for growing food,
+                            keep plants from dying, and sustain ourselves during droughts.
+                        </p>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="content-textbox">
+
+                <div class="subsection">
+                    
+                    <div class="content-text">
+                        <h1 class="subhead">Climate change</h1>
+                        
+                        <p>
+                            Climate change affects water availability all around the world. Rising global temperatures
+                            increase droughts in some regions, while other regions experience massive floods. Frequent storms increase runoff that gets carried into 
+                            water bodies. These changes directly make accessing freshwater much harder for communities. 
+                        </p>
+
+                        <blockquote class="quote">
+                            Climate change is primarily a water crisis. 
+                            We feel its impacts through worsening floods, rising sea levels, 
+                            shrinking ice fields, wildfires and droughts. 
+
+                            However, water can fight climate change. Sustainable water management is central to building the resilience of societies and ecosystems and to reducing carbon emissions. Everyone has a role to play – actions at the individual and household levels are vital.
+                            
+                        </blockquote> 
+                        - <a class="copyright" href="https://www.unwater.org/water-facts/water-and-climate-change" target="_blank">© UN WATER</a>
+
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            <div class="content-textbox">
+
+                <div class="subsection">
+
+                    <div class="content-text">
+
+                        <h1 class="subhead">Energy consumption</h1>
+
+                        <p>
+                            Conserving water is not only beneficial for our health and well-being, but also for energy savings. According to the study by 
+                            <a class="copyright" href="https://www.usgs.gov/news/featured-story/water-energy-nexus-earth-science-perspective" target="_blank">USGS</a> - for many countries around the world, energy generating sources such as <strong>Thermoelectric Power</strong> (Coal, Natural Gas, Nuclear) as well as
+                            <strong>Hydroelectric Power</strong>, etc, all rely heavily on water. Water here acts as a coolant and a working fluid, which means water is <strong>non-negotiatable</strong> for the
+                            majority of our energy infrastructure. Hence why we should conserve our water usage, as water scarcity directly limits energy production. Additionally,
+                            conserving saves energy, for our household utilities as well as for industrial energy consumption.
+                        </p>
+
+                    </div>
+
+                    <div class="image-section">
+
+                        <!-- Image source: https://www.usgs.gov/media/images/nipsco-coal-power-plant-cooling-tower -->
+                        <img src="images/powerplant.jpg" alt="power plant image">
+                        © <a href="https://www.usgs.gov/media/images/nipsco-coal-power-plant-cooling-tower" target="_blank" class="copyright">NIPSCO Coal Power Plant Cooling Tower</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Next button moves to the next home page topic. -->
+            <div class="section-nav" aria-label="Factors section navigation">
+                <button class="section-btn" onclick="nextSection('impacts')">Next &rarr;</button>
+            </div>
+
+        </div>
+        
+
+        <div id="impacts" class="content-section">
+            
+            <div class="content-box insert-space">
+                
+                <div class="content-text">
+
+                    <div class="intro-box">
+                        <p>
+                            Failing to conserve water can worsen water scarcity and increase the risk of droughts, environmental damage, and economic instability.
+                        </p>
+                    </div>
+
+                    <h1 class="subhead"> Consequences of water scarcity</h1>
+
+                    <ul>
+                        <li>Plummeting biodiversity</li>
+                        <li>Food and Agricultural Crisis</li>
+                        <li>Worsened Water Quality and Health Risks</li>
+                        <li>Economic and Social Instability</li>
+                    </ul>
+
+                </div>
+
+                <div class="image-section">
+                    <!-- Image source: https://www.dreamstime.com/dried-up-empty-reservoir-dam-summer-heatwave-low-rainfall-drought-north-karnataka-india-image142114411 -->
+                    <img src="images/empty-reservoir.webp" alt="empty reservior image"><br>
+                    © <a href="https://www.dreamstime.com/dried-up-empty-reservoir-dam-summer-heatwave-low-rainfall-drought-north-karnataka-india-image142114411" class="copyright" target="_blank">dreamstime</a>
+                </div>
+
+            </div>
+
+            <div class="content-textbox">
+                
+                <div class="subsection">
+                    
+                    <div class="content-text ">
+                        <h1 class="subhead">Plummeting biodiversity</h1>
+
+                        <p>
+                            Freshwater aquatic animals experience massive declines, by about 85% since the 1970s according to WWF’s Living Planet Report 2024, 
+                            largely due to water scarcity as well as huge water withdrawals.Other main drivers include habitat destruction, fragmentation, overuse of freshwater and pollution
+                            from massive dams. These cumulative impacts weaken the ecosystem and forces many freshwater species towards collapse.
+
+                        </p>
+                    </div>
+
+                </div>
+            
+            </div>
+
+            <div class="content-textbox">
+
+                <div class="subsection">
+
+                    <div class="image-section">
+                        <!-- Image source: https://www.istockphoto.com/photo/hungry-poor-old-mans-hands-an-empty-bowl-selective-focus-poverty-in-retirement-alms-gm1301538713-393549508 -->
+                        <img src="images/food-crisis.webp" alt="food crisis image"><br>
+                        © <a href="https://www.istockphoto.com/photo/hungry-poor-old-mans-hands-an-empty-bowl-selective-focus-poverty-in-retirement-alms-gm1301538713-393549508" target="_blank" class="copyright">unsplash</a>
+                    </div>
+
+                    <div class="content-text">
+                        <h1 class="subhead">Food and Agricultural Crisis</h1>
+
+                        <p>
+                            Without active action to conserve water, vital plant species struggle to grow and mature. 
+                            Global food production is predicted to deteriorate by 50% by the year 2050 according to some studies. 
+                            Especially major-grain export areas face the highest risk of agricultural decline. This creates a chain reaction. 
+                            Livestock mortality rates rise and farmers are forced prematurely sell off herds. 
+                            Due to lack of essential livestock food sources specifically corn and soy and more feed crop failures. 
+                            From then we would experience immediate escalation of food instability and shortages in global communities. 
+                            Widespread crop and livestock losses trigger massive market price hikes and severe food inflation. 
+                            Farmers witness extreme financial instability and loss of livelihood. 
+                            The cumulative effect would then scale into a major threat to global food and economic security.
+                        </p>
+                    </div>
+
+                    
+                    
+                </div>
+
+            </div>
+
+            <div class="content-textbox">
+
+                <div class="subsection">
+
+                    
+
+                    <div class="content-text">
+                        <h1 class="subhead">Worsened Water Quality and Health Risks</h1>
+
+                        <p>
+                            Dropping water levels fail to neutralize incoming industrial, agricultural and sewage waste, leading to quality downgrades and dilution failures. 
+                            Moreover, the highly toxic chemicals such as heavy metals and pesticides from these wastes get contaminated into drinking water. 
+                            Which obviously then leads to health problems that could well be very expensive or impossible to treat. 
+                            Furthermore, due to low water flow and higher temperatures, water becomes a breeding ground for many parasites or pathogens to thrive. 
+                            This would then make sanitation and hygiene impossible due to the many diseases and infections carried across water bodies. 
+                            To combat this, many industries would resolve to water treatment infrastructures, 
+                            of which could become overwhelmed and end up distributing unsafe drinking water or worst case scenario, complete system failures.
+
+                        </p>
+
+                    </div>
+
+                    <div class="image-section">
+                        <!-- Image source: https://www.istockphoto.com/photo/roach-swimming-amongst-green-reeds-in-clear-lake-water-gm2200463001-618168672 -->
+                        <img src="images/freshwater-life.jpg" alt="freshwater ecosystem"><br>
+                        © <a href="https://www.istockphoto.com/photo/roach-swimming-amongst-green-reeds-in-clear-lake-water-gm2200463001-618168672?searchscope=image%2Cfilm" class="copyright" target="_blank">istockphoto</a>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="content-textbox">
+
+                <div class="subsection">
+                    <div class="content-text">
+                        <h1 class="subhead">Economic and Social Instability</h1>
+                        
+                        <p>
+                            All of these impacts could then add up to massive losses for governments as well as for the people of society. 
+                            Assuming no actions taken, the World Bank report states - decline in GDP by up to 6% by the year 2050 in some regions due to factors such as climate change. 
+                            Migration would then become apparent and countries could face immigration issues with millions becoming climate refugees. 
+                            In some communities many women and children lose their chance for education as well as economics 
+                            due to water collection duty and this creates social inequalities between people. 
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Back and Next buttons guide users through the topic order. -->
+            <div class="section-nav" aria-label="Impacts section navigation">
+                <button class="section-btn secondary-btn" onclick="nextSection('factors')">&larr; Back</button>
+                <button class="section-btn" onclick="nextSection('solutions')">Next &rarr;</button>
+            </div>
+            
+        </div>
+
+        <div id="solutions" class="content-section">
+
+            <div class="content-box">
+                
+                <div class="content-text">
+                    
+                    <div class="intro-box">
+                        <p>
+                            Adopting sustainable water management practices remain essential in combating the risks of water scarcity. 
+                        </p>
+                    </div>
+
+                    <h1 class="subhead">Such key practices include</h1>
+                    
+                    <ul>
+                        <li>Agricultural Transformation</li>
+                        <li>Infrastructure Modernization & Recycling</li>
+                        <li>Policy & Economic Incentives</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            
+            <div class="card">
+
+                <div class="content-textbox">
+
+                    <div class="subsection">
+
+                        <div class="content-text">
+                            <h1 class="subhead">Agricultural Transformation</h1>
+
+                            <p>
+                                Water is essential for agriculture, where efficiency means minimizing losses through evaporation or runoff. Strategies to optimize existing systems include using soil moisture sensors, chiseling compacted soils, and increasing organic matter via mulching. While drip irrigation is the most effective method for reducing waste, improving current management practices can still yield significant water savings. 
+                            </p>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+                <div class="content-textbox">
+
+                    <div class="subsection">
+
+                        <div class="content-text">
+                            <h1 class="subhead">Infrastructure Modernization & Recycling</h1>
+
+                            <p>
+                                Upgrading municipal and industrial infrastructure to fix leaks, which currently waste 30% of the supply, is critical for water conservation. Implementing wastewater recycling systems for industrial cooling, landscaping, and indirect potable use creates a circular water economy, which drastically reduces the need to extract fresh water from stressed aquifers and rivers.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content-textbox">
+
+                <div class="subsection">
+
+                    <div class="content-text">
+                        <h1 class="subhead">Policy & Economic Incentives</h1>
+
+                        <p>
+                            Governments must enforce tiered water pricing models where costs rise with usage, creating a financial imperative for large-scale users to conserve. Additionally, implementing strict zoning laws to protect wetlands and mandating water-efficient standards for new commercial and industrial construction ensure a long-term systemic reduction in water demand.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Back and Next buttons guide users through the topic order. -->
+            <div class="section-nav" aria-label="Solutions section navigation">
+                <button class="section-btn secondary-btn" onclick="nextSection('impacts')">&larr; Back</button>
+                <button class="section-btn" onclick="nextSection('practical')">Next &rarr;</button>
+            </div>
+
+        </div>
+
+        <div id="practical" class="content-section">
+
+            <div class="content-box">
+                
+                <div class="content-text">
+
+                    <div class="intro-box">
+                        <p>
+                            We have discussed existing strategies and solutions, but now we will focus on individual actions that can help contribute to global water conservation.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="content-textbox">
+
+                    <div class="subsection">
+
+                        <div class="content-text">
+                            <h1 class="subhead">Upgrade Home Irrigation:</h1>
+
+                            <p>
+                                Replace spray sprinklers with drip irrigation or soaking hoses for gardens to minimize evaporation and deliver water directly to plant roots.
+                            </p>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+                <div class="content-textbox">
+
+                    <div class="subsection">
+
+                        <div class="content-text">
+                            <h1 class="subhead">Fix Leaks Promptly:</h1>
+
+                            <p>
+                                Regularly check faucets, toilets, and pipes for leaks, as even small drips can waste significant amounts of water over time, mirroring the 30% loss seen in municipal systems.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="content-textbox">
+
+                    <div class="subsection">
+
+                        <div class="content-text">
+                            <h1 class="subhead">Adopt Water-Smart Landscaping:</h1>
+
+                            <p>
+                                Use mulching and plant drought-resistant varieties to improve soil water retention and reduce the need for frequent watering.
+                            </p>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+                
+
+            <div class="card">
+
+                <div class="content-textbox">
+
+                    <div class="subsection">
+
+                        <div class="content-text">
+                            <h1 class="subhead">Install Sensors and Timers:</h1>
+
+                            <p>
+                                Utilize smart irrigation controllers or soil moisture sensors to water only when necessary, avoiding runoff and over-watering.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="content-textbox">
+
+                    <div class="subsection">
+
+                        <div class="content-text">
+                            <h1 class="subhead">Support Local Conservation:</h1>
+
+                            <p>
+                                Advocate for or participate in local rainwater harvesting programs and support policies that protect local wetlands and water sources.
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>    
+            
+            <!-- Back button returns to the previous home page topic. -->
+            <div class="section-nav" aria-label="Practical applications section navigation">
+                <button class="section-btn secondary-btn" onclick="nextSection('solutions')">&larr; Back</button>
+            </div>
+            
+        </div>
+
+    </main>
+
+    <button class="topBtn" onclick="scrollToTop()">
+    ↑
+    </button>
+
+    <script src="javascript/script.js"></script>
+
+
+<!-- Footer contains the project copyright text. -->
+<footer>
+    <p>© FED Project 2026</p>
+</footer>
+
+</body>
+
+</html>

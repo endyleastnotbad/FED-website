@@ -1,0 +1,335 @@
+
+/* body section */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    margin: 0;
+    color: #16313c;
+    background-color: #eef8fb;
+}
+
+/* Head section */
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 12px 30px rgba(0, 64, 92, 0.08);
+
+}
+
+.title {
+    font-size: large;
+    margin: 0;
+}
+
+/* Page navigation section */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #16313c;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #087f8c;
+}
+
+/* HTML main section */
+
+main {
+    padding: 110px 20px 80px;
+}
+
+/* hero section */
+
+.hero {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #0b4f5d;
+}
+
+.hero p {
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+
+/* Buttons section */
+
+.topics {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 12px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.topic-btn:hover {
+    transform: translateY(-2px);
+    background-color: #d8f2f5;
+    cursor: pointer;
+}
+
+.topic-btn {
+    font-size: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #b7d7dd;
+    color: #16313c;
+    padding: 10px 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.active-btn {
+    background-color: #c8f3ee;
+    border-color: #2b9aa5;
+    box-shadow: 0 6px 16px rgba(8, 127, 140, 0.14);
+}
+
+.topBtn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #c8f3ee;
+    color: #0b4f5d;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 10px 24px rgba(0, 64, 92, 0.18);
+}
+
+.topBtn:hover {
+    transform: translateY(-3px);
+    background-color: #a9e6ed;
+}
+
+.section-nav {
+    /* Places the Back and Next buttons at the end of each home page section. */
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    width: 70%;
+    margin: 20px auto 0;
+}
+
+.section-btn {
+    min-width: 110px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    color: white;
+    background-color: #087f8c;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 18px rgba(8, 127, 140, 0.2);
+}
+
+.section-btn:hover {
+    transform: translateY(-2px);
+    background-color: #0b6f78;
+}
+
+.secondary-btn {
+    color: #0b4f5d;
+    background-color: white;
+    border: 1px solid #b7d7dd;
+    box-shadow: none;
+}
+
+.secondary-btn:hover {
+    background-color: #e7f7f9;
+}
+
+
+/* Content styling */
+
+.content-section {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.content-box {
+    /* Main white content container used for image and text rows. */
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background-color: white;
+    width: 70%;
+    margin: 40px auto 50px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 28px rgba(0, 64, 92, 0.09);
+}
+
+.content-text {
+    flex: 1 1 0;
+    line-height: 1.3;
+    text-align: left;
+    word-spacing: -0.5px;
+}
+
+
+.content-text ul li {
+    line-height: 1.6;
+}
+
+.content-textbox {
+    /* Smaller white box used for longer explanation sections. */
+    display: block;
+    background-color: white;
+    width: 70%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 28px rgba(0, 64, 92, 0.09);
+}
+
+.card {
+    /* Groups related content boxes side by side. */
+    display: flex;
+    width: 75%;
+    gap: 40px;
+    margin: 10px auto;
+}
+
+.card .content-textbox {
+    flex: 1;
+    width: auto;
+    margin: 20px 0;
+}
+
+.subsection {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.image-section {
+    /* Keeps images from becoming too small beside long text. */
+    flex: 0 0 340px;
+}
+
+.content-box .image-section {
+    flex-basis: 400px;
+}
+
+.subhead {
+    font-size: x-large;
+    text-align: left;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.quote::before {
+   content: open-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+}
+
+.quote::after {
+   content: close-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+}
+
+.intro-box{
+    border-left: 7px solid #7ed6df;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.intro-box p{
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+/* copyright styling */
+
+.copyright {
+    text-decoration: none;
+    color: purple;
+    font-size: small;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: purple;
+}
+
+
+/* custom section styling */
+
+
+#factors {
+    display: block;
+}
+
+.insert-space {
+    gap: 160px;
+}    
+
+
+
+
+/* Footer section */
+
+footer {
+    clear: both;
+    background-color: #bfe7ee;
+    text-align: center;
+    padding: 10px;
+}
